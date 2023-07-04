@@ -11,8 +11,10 @@
 ## Привязка Базы данных и использование её возможностей
 В коде программы, для работоспособности команд, прописать:<br>
 <br>
-using System.Configuration;<br>
-using System.Data.SqlClient;<br>
+```
+    using System.Configuration;<br>
+    using System.Data.SqlClient;<br>
+```
 
 В коде, прописываем перед public Form1():<br>
 public static string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;<br>
@@ -46,11 +48,14 @@ connection.Open(); //Для первой проверки советую обо�
 где Table_1 - Название таблицы<br>
 
 //Создаём объект класса SqlCommand для выполнения команд SQL<br>
-SqlCommand command = new SqlCommand(sqlExpression, connection);
+```
+    SqlCommand command = new SqlCommand(sqlExpression, connection);
+```
 
 //Создаём объект класса SqlDataReader для вычитывания<br>
-SqlDataReader reader = command.ExecuteReader();<br>
-
+```
+    SqlDataReader reader = command.ExecuteReader();<br>
+```
 
 ###Выводим данные из таблицы
 (Я выводил в richTextbox)<br>
