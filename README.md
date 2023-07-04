@@ -16,7 +16,7 @@ using System.Data.SqlClient;<br>
 Прописываем:<br>
 public static string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;<br>
 public SqlConnection connection = new SqlConnection(connectionString);<br>
-string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=First-DataBase;Integrated Security=True"; где First-DataBase - название Базы данных<br>
+public string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=First-DataBase;Integrated Security=True"; где First-DataBase - название Базы данных<br>
 
 
 
