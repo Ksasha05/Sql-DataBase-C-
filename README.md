@@ -13,6 +13,8 @@ using System.Data.SqlClient;<br>
 
 
 ## Привязка Базы данных и использование её возможностей
-
+Прописываем:<br>
+public static string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;<br>
+public SqlConnection connection = new SqlConnection(connectionString);<br>
 
 
