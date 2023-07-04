@@ -39,3 +39,13 @@ SqlCommand command = new SqlCommand(sqlExpression, connection);
 
 //Создаём объект класса SqlDataReader для вычитывания<br>
 SqlDataReader reader = command.ExecuteReader();<br>
+
+
+
+
+
+
+
+
+
+
