@@ -44,8 +44,10 @@ SqlDataReader reader = command.ExecuteReader();<br>
 ###Выводим данные из таблицы
 (Я выводил в richTextbox)<br>
 
-reader.GetValue(0); - Возвращает значение из столбца, столбцы по порядку 0-1-2-...
+reader.GetValue(0); - Возвращает значение из столбца, столбцы по порядку 0-1-2-...<br>
 
+На всякий случай, можно сделать проверку на существование данных в таблице<br>
+![image](https://github.com/Ksasha05/Sql-DataBase-C-/assets/113344025/0ee6d17a-e2c3-4ecd-982b-9078042812b5)
 
 
 
