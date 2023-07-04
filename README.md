@@ -18,6 +18,13 @@ using System.Data.SqlClient;<br>
 public static string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;<br>
 public SqlConnection connection = new SqlConnection(connectionString);<br>
 
+В файле App.config необходимо прописать:<br>
+  ```<connectionStrings>
+   <add name="DefaultConnection" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=usersdb;Integrated Security=True"
+       providerName="System.Data.SqlClient"/>
+  </connectionStrings>```
+
+
 Эту часть прописываем после InitializeComponent(); (я так делал, у меня работает :D )<br>
 string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=First-DataBase;Integrated Security=True";<br>
 <br>
