@@ -22,5 +22,6 @@ public SqlConnection connection = new SqlConnection(connectionString);<br>
 string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=First-DataBase;Integrated Security=True"; где First-DataBase - название Базы данных<br>
 
 ### Подключение к Базе данных
-connection.Open();
+connection.Open(); //Для первой проверки советую оборачивать в try<br>
+
 
