@@ -25,7 +25,9 @@ string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=First-DataB
 connection.Open(); //Для первой проверки советую оборачивать в try<br>
 ![image](https://github.com/Ksasha05/Sql-DataBase-C-/assets/113344025/2cc952ac-50c8-4034-ac92-818b30d9f8c2) <br>
 
-123
+### Создание и использование запроса к Базе данных
+//Запрос на языке SQl<br>
+string sqlExpression = "SELECT * FROM Table_1 WHERE Name='Alex'";<br>
 
 
 
