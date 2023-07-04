@@ -41,7 +41,7 @@ connection.Open(); //Для первой проверки советую обо�
 ### Создание и использование запроса к Базе данных
 //Запрос на языке SQl<br>
 ```
-string sqlExpression = "SELECT * FROM Table_1 WHERE Name='Alex'";
+     string sqlExpression = "SELECT * FROM Table_1 WHERE Name='Alex'";
 ```
 где Table_1 - Название таблицы<br>
 
