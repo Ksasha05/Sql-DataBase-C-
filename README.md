@@ -41,6 +41,10 @@ SqlCommand command = new SqlCommand(sqlExpression, connection);
 SqlDataReader reader = command.ExecuteReader();<br>
 
 
+###Выводим данные из таблицы
+(Я выводил в richTextbox)<br>
+
+reader.GetValue(0); - Возвращает значение из столбца, столбцы по порядку 0-1-2-...
 
 
 
