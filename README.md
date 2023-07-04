@@ -20,6 +20,7 @@ public SqlConnection connection = new SqlConnection(connectionString);<br>
 
 Эту часть прописываем после InitializeComponent(); (я так делал, у меня работает :D )<br>
 string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=First-DataBase;Integrated Security=True";<br>
+<br>
 где SQLEXPRESS - название сервера для подключения<br>
 ![image](https://github.com/Ksasha05/Sql-DataBase-C-/assets/113344025/65bec770-1abf-47cf-b575-fab44aee5b82)<br>
 a First-DataBase - название Базы данных<br>
