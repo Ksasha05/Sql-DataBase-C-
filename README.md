@@ -37,4 +37,5 @@ string sqlExpression = "SELECT * FROM Table_1 WHERE Name='Alex'";<br>
 //Создаём объект класса SqlCommand для выполнения команд SQL<br>
 SqlCommand command = new SqlCommand(sqlExpression, connection);
 
-
+//Создаём объект класса SqlDataReader для вычитывания<br>
+SqlDataReader reader = command.ExecuteReader();<br>
