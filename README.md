@@ -23,5 +23,14 @@ string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=First-DataB
 
 ### Подключение к Базе данных
 connection.Open(); //Для первой проверки советую оборачивать в try<br>
-
+            try
+            {
+                // Открываем подключение
+                connection.Open();
+                MessageBox.Show("Подключение открыто");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
