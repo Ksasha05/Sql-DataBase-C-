@@ -9,6 +9,6 @@ using System.Configuration;<br>
 using System.Data.SqlClient;<br>
  
 ## Создание БД
-Всё чётко и подробно расписано <a href="https://metanit.com/sharp/adonet/2.1.php">тут</a>
+Всё чётко и подробно расписано <a href="https://metanit.com/sharp/adonet/2.1.php" target="_blank">тут</a>
 
 
