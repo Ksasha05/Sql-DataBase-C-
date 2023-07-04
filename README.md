@@ -8,7 +8,11 @@
 using System.Configuration;<br>
 using System.Data.SqlClient;<br>
  
-## Создание БД
+## Создание Базы данных
 Всё чётко и подробно расписано тут - https://metanit.com/sharp/adonet/2.1.php
+
+
+## Привязка Базы данных и использование её возможностей
+
 
 
