@@ -3,16 +3,17 @@
 
 ## Предисловие
 Для создания БД, нужно установить SQL Management Studio(у меня 2019 года)<br>
-В коде программы, для работоспособности команд, прописать:<br>
-<br>
-using System.Configuration;<br>
-using System.Data.SqlClient;<br>
  
 ## Создание Базы данных
 Всё чётко и подробно расписано тут - https://metanit.com/sharp/adonet/2.1.php
 
 
 ## Привязка Базы данных и использование её возможностей
+В коде программы, для работоспособности команд, прописать:<br>
+<br>
+using System.Configuration;<br>
+using System.Data.SqlClient;<br>
+
 Прописываем:<br>
 public static string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;<br>
 public SqlConnection connection = new SqlConnection(connectionString);<br>
@@ -20,6 +21,6 @@ public SqlConnection connection = new SqlConnection(connectionString);<br>
 Эту часть прописываем после InitializeComponent(); (я так делал, у меня работает :D )
 string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=First-DataBase;Integrated Security=True"; где First-DataBase - название Базы данных<br>
 
-### Подключиться к Базе данных
+### Подключение к Базе данных
 connection.Open();
 
