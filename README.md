@@ -34,6 +34,7 @@ connection.Open(); //Для первой проверки советую обо�
 string sqlExpression = "SELECT * FROM Table_1 WHERE Name='Alex'";<br>
 где Table_1 - Название таблицы<br>
 
-
+//Создаём объект класса SqlCommand для выполнения команд SQL
+SqlCommand command = new SqlCommand(sqlExpression, connection);
 
 
