@@ -4,6 +4,7 @@
 ## Предисловие
 Для создания БД, нужно установить SQL Management Studio(у меня 2019 года)<br>
 В коде программы, прописать:<br>
+<br>
 using System.Configuration;<br>
 using System.Data.SqlClient;<br>
 
