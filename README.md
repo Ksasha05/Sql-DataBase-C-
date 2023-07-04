@@ -19,11 +19,11 @@ public static string connectionString = ConfigurationManager.ConnectionStrings["
 public SqlConnection connection = new SqlConnection(connectionString);<br>
 
 В файле App.config необходимо прописать:<br>
-  ```<connectionStrings>
+```<connectionStrings>
    <add name="DefaultConnection" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=usersdb;Integrated Security=True"
        providerName="System.Data.SqlClient"/>
-  </connectionStrings>```
-
+  </connectionStrings>
+```
 
 Эту часть прописываем после InitializeComponent(); (я так делал, у меня работает :D )<br>
 string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=First-DataBase;Integrated Security=True";<br>
