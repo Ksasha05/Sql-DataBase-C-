@@ -14,7 +14,7 @@
 using System.Configuration;<br>
 using System.Data.SqlClient;<br>
 
-Прописываем:<br>
+В коде, прописываем перед public Form1():<br>
 public static string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;<br>
 public SqlConnection connection = new SqlConnection(connectionString);<br>
 
