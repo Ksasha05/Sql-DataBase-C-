@@ -24,6 +24,8 @@ public SqlConnection connection = new SqlConnection(connectionString);<br>
        providerName="System.Data.SqlClient"/>
   </connectionStrings>
 ```
+![image](https://github.com/Ksasha05/Sql-DataBase-C-/assets/113344025/0ee1069d-e917-472b-8dff-f03b3664adaf)
+
 
 Эту часть прописываем после InitializeComponent(); (я так делал, у меня работает :D )<br>
 string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=First-DataBase;Integrated Security=True";<br>
