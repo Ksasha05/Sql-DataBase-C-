@@ -16,7 +16,10 @@ using System.Data.SqlClient;<br>
 Прописываем:<br>
 public static string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;<br>
 public SqlConnection connection = new SqlConnection(connectionString);<br>
-public string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=First-DataBase;Integrated Security=True"; где First-DataBase - название Базы данных<br>
 
+Эту часть прописываем после InitializeComponent(); (я так делал, у меня работает :D )
+string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=First-DataBase;Integrated Security=True"; где First-DataBase - название Базы данных<br>
 
+### Подключиться к Базе данных
+connection.Open();
 
